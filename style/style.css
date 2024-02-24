@@ -12,7 +12,7 @@ body{
     background-color: var(--crimson-red);
 }
 
-header{
+.header{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,12 +35,12 @@ header{
     background-image: url(../img/ruby-texture.png);
     border: none;
     border-radius: 13px;
-    transition: 300ms;
+    transition: 2000ms;
 }
 
 .login button:hover{
     cursor: pointer;
-    background-image: url(../img/fire-texture.png);
+    background-image: url(../img/fire-texture-1.gif);
 }
 
 .login a{
