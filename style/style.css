@@ -1,0 +1,60 @@
+:root{
+    --crimson-red: #201111;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--crimson-red);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1000px;
+}
+
+.logo{
+    margin-left: 70px;
+}
+
+.login{
+    margin-right: 97px;
+    display: flex;
+    gap: 40px;
+}
+
+.login button{
+    height: 63px;
+    width: 204px;
+    background-image: url(../img/ruby-texture.png);
+    border: none;
+    border-radius: 13px;
+    transition: 300ms;
+}
+
+.login button:hover{
+    cursor: pointer;
+    background-image: url(../img/fire-texture.png);
+}
+
+.login a{
+    text-decoration: none;
+    color: white;
+    font-family: "Langar", system-ui;
+    font-size: 36px;
+}
+
+@media (max-width: 1440px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 550px;
+    }
+}
