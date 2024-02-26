@@ -4,16 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/magic-favicon-ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/login-style.css">
     <title>Login</title>
 </head>
 <body>
-    <header>
-
+    <header class="header">
+        <a href=""><img src="../img/logo.png" alt="Magic the Wiki logo"></a>
     </header>
 
     <main>
+        <section class="container">
+            <form action="" class="form-box">
+                <div class="login-assets">
+                    <div class="user-name">
+                        <label for="user-login">User</label>
+                        <input type="text" name="email-login" id="user">
+                    </div>
+                    <div class="password">
+                        <label for="password-login">Password</label>
+                        <input type="password" name="password-login" id="password">
+                    </div>
+                </div>
 
+                <button class="submit-form" id="login">
+                    Submit
+                </button>
+            </form>
+        </section>
     </main>
+
+    <script src="../js/login.js" type="module"></script>
 </body>
 </html>
