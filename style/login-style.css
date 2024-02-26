@@ -1,13 +1,66 @@
 :root{
+    --font: font-family: "Langar", system-ui;
     --crimson-red: #201111;
+    --white: #fff;
 }
 
-*{
+*{  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header img{
+    width: 400px;
+}
+
+.header a{
+    width: 400px;
+    cursor: pointer;
+}
+
 body{
     background-color: var(--crimson-red);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+.form-box{
+    gap: 50px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.submit-form{
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    background-image: url(../img/);
+    border: none;
+    border-radius: 12px;
+}
+
+.login-assets{
+    font-family: "Langar", system-ui;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
