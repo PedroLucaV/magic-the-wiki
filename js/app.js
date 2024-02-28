@@ -18,8 +18,5 @@ const loadAllWithPromiseAll = async () =>{
 loadAllWithPromiseAll()
 
 function showCards(cards){
-    // const cardsContainer = document.getElementById("cards-container")
-    // cards.map((cards) =>{
-    //     console.log(cards.id)
-    // })
+
 }

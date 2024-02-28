@@ -1,8 +1,10 @@
 :root{
     --crimson-red: #201111;
+    --light-crimson-red: #391C1C;
 }
 
 *{
+    cursor: url('../img/mouse-normal.png'), auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,10 +52,28 @@ body{
     font-size: 36px;
 }
 
+.login p:hover{
+    cursor: url('../img/mouse-point.png'), auto;
+}
+
+.login button:hover{
+    cursor: url('../img/mouse-point.png'), auto;
+}
+
 .main{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.main .arrows-change{
+    margin: 80px;
+    display: flex;
+}
+
+.main .arrows-change img{
+    cursor: pointer;
 }
 
 .container{
@@ -62,6 +82,38 @@ body{
     width: 1280px;
     background-repeat: no-repeat;
 }
+
+.footer{
+    display: flex;
+    height: 150px;
+    background-color: var(--light-crimson-red);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+}
+
+.social-media{
+    position: absolute;
+    align-self: flex-end;
+    margin-right: 125px;
+    display: flex;
+    gap: 25px;
+}
+
+.footer h2{
+    font-family: "Langar", system-ui;
+    text-align: center;
+    font-weight: 100;
+}
+
+.footer h3{
+    font-family: "Langar", system-ui;
+    text-align: center;
+    font-weight: 100;
+}
+
 
 @media (max-width: 1440px){
     header{

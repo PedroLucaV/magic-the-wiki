@@ -5,6 +5,7 @@
 }
 
 *{  
+    cursor: url('../img/mouse-normal.png'), auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,13 +50,16 @@ main{
     justify-content: center;
 }
 
-.submit-form{
-    cursor: pointer;
+.submit-form button{
     width: 250px;
     height: 50px;
-    background-image: url(../img/);
     border: none;
     border-radius: 12px;
+    background-color: rgb(72, 82, 72);
+}
+
+.submit-form button:hover{
+    cursor: url('../img/mouse-point.png'), pointer;
 }
 
 .login-assets{
