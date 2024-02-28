@@ -50,6 +50,19 @@ body{
     font-size: 36px;
 }
 
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-image: url(../img/section.png);
+    height: 650px;
+    width: 1280px;
+    background-repeat: no-repeat;
+}
+
 @media (max-width: 1440px){
     header{
         display: flex;
