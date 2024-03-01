@@ -1,37 +1,37 @@
-:root{
+:root {
     --crimson-red: #201111;
     --light-crimson-red: #391C1C;
 }
 
-*{
+* {
     cursor: url('../img/mouse-normal.png'), auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--crimson-red);
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1000px;
 }
 
-.logo{
+.logo {
     margin-left: 70px;
 }
 
-.login{
+.login {
     margin-right: 97px;
     display: flex;
     gap: 40px;
 }
 
-.login button{
+.login button {
     height: 63px;
     width: 204px;
     background-image: url(../img/ruby-texture.png);
@@ -40,50 +40,50 @@ body{
     transition: 2000ms;
 }
 
-.login button:hover{
+.login button:hover {
     cursor: pointer;
     background-image: url(../img/fire-texture-1.gif);
 }
 
-.login a{
+.login a {
     text-decoration: none;
     color: white;
     font-family: "Langar", system-ui;
     font-size: 36px;
 }
 
-.login p:hover{
+.login p:hover {
     cursor: url('../img/mouse-point.png'), auto;
 }
 
-.login button:hover{
+.login button:hover {
     cursor: url('../img/mouse-point.png'), auto;
 }
 
-.main{
+.main {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.main .arrows-change{
+.main .arrows-change {
     margin: 80px;
     display: flex;
 }
 
-.main .arrows-change img{
-    cursor: pointer;
+.main .arrows-change img {
+    cursor: url('../img/mouse-point.png'),pointer;
 }
 
-.container{
+.container {
     background-image: url(../img/section.png);
     height: 650px;
     width: 1280px;
     background-repeat: no-repeat;
 }
 
-.footer{
+.footer {
     display: flex;
     height: 150px;
     background-color: var(--light-crimson-red);
@@ -102,21 +102,77 @@ body{
     gap: 25px;
 }
 
-.footer h2{
+.social-media img{
+    cursor: url('../img/mouse-point.png'),pointer;
+}
+
+.footer h2 {
     font-family: "Langar", system-ui;
     text-align: center;
     font-weight: 100;
 }
 
-.footer h3{
+.footer h3 {
     font-family: "Langar", system-ui;
     text-align: center;
     font-weight: 100;
 }
 
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 223px;
+    height: 310px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
 
-@media (max-width: 1440px){
-    header{
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.img-card {
+    width: 223px;
+    height: 310px;
+}
+
+@media (max-width: 1440px) {
+    header {
         display: flex;
         align-items: center;
         justify-content: center;
