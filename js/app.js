@@ -3,14 +3,19 @@ const prevPage = document.getElementById('previous-page')
 const nextPage = document.getElementById('next-page')
 const pageNumber = document.getElementById('page-count')
 
+let page = 1
 let start = 0
 let end = 10
-let page = 2
+
+nextPage.addEventListener('click', ()=>{
+    return page++
+})
+
+pageNumber.addEventListener('click', ()=>{
+    alert(page)
+})
 
 pageNumber.innerHTML = page
-
-console.log(start)
-
 
 const loadCards = async () =>{
     const res = await fetch(`${baseURL}/cards`)

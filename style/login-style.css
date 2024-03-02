@@ -80,11 +80,7 @@ main{
 .user-box-input{
     display: flex;
     gap: 10px;
-}
-
-.pass-box-input{
-    display: flex;
-    gap: 10px;
+    flex-direction: column;
 }
 
 .create-acount{
@@ -131,4 +127,12 @@ main{
     font-family: "Langar", system-ui;
     text-align: center;
     font-weight: 100;
+}
+
+.emptyMensage {
+    display: none;
+    color: red;
+    font-style: oblique;
+    font-weight: 500;
+    font-size: 12px;
 }

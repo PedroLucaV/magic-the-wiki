@@ -6,7 +6,7 @@ btn.addEventListener('click', (event) => {
     const user = document.getElementById('user').value
     const password = document.getElementById('password').value
 
-    const login = data.find((obj) => obj.usuario === user && obj.senha === password)
+    const login = data.find((obj) => obj.user === user && obj.senha === password)
 
     console.log(user, password)
     console.log(login)

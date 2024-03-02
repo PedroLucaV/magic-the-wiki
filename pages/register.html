@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/magic-favicon-ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/login-style.css">
-    <title>Login</title>
+    <title>Register</title>
 </head>
 <body>
     <header class="header">
@@ -21,16 +21,25 @@
             <form action="" class="form-box">
                 <div class="login-assets">
                     <div class="user-name user-box-input">
-                        <label for="user-register">Username</label>
-                        <input type="text" name="user-register" placeholder="Ex: 'Pedro Lucas'" id="username">
+                        <div class="inputs">
+                            <label for="user-register">Username</label>
+                            <input type="text" name="user-register" placeholder="Ex: 'Joseph'" id="username">
+                        </div>
+                        <span class="emptyMensage">Username can't be empty</span>
                     </div>
                     <div class="user-email user-box-input">
-                        <label for="user-email">Email</label>
-                        <input type="text" name="user-email" placeholder="Ex: 'test@example.com'" id="user-email">
+                        <div class="inputs">
+                            <label for="user-email">Email</label>
+                            <input type="text" name="user-email" placeholder="Ex: 'test@example.com'" id="user-email">
+                        </div>
+                        <span class="emptyMensage">Looks like this is not an email</span>
                     </div>
-                    <div class="password pass-box-input">
-                        <label for="password-login">Password</label>
-                        <input type="password" name="password-login" placeholder="Ex: '123456'" id="password-register">
+                    <div class="password user-box-input">
+                        <div class="inputs">
+                            <label for="password-login">Password</label>
+                            <input type="password" name="password-login" placeholder="Ex: '123456'" id="password-register">
+                        </div>
+                        <span class="emptyMensage">Your password must have at least 8 characters (numbers and letters only)</span>
                     </div>
                 </div>
 
