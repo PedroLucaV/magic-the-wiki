@@ -1,19 +1,8 @@
 [
     {
-      "id": 1,
-      "usuario": "a",
-      "senha": "1"
-    },
-    
-    {
-      "id": 2,
-      "usuario": "b",
-      "senha": "2"
-    },
-  
-    {
-      "id": 3,
-      "usuario": "c",
-      "senha": "3"
+      "id": 123,
+      "user": "Pedro",
+      "senha": "pedroL",
+      "email": "pedro@gmail.com"
     }
   ]
