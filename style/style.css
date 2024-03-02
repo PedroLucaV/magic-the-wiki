@@ -14,12 +14,7 @@ body {
     background-color: var(--crimson-red);
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1000px;
-}
+
 
 .logo {
     margin-left: 70px;
@@ -84,6 +79,7 @@ body {
 }
 
 .footer {
+    cursor: url('../img/mouse-normal.png'), auto;
     display: flex;
     height: 150px;
     background-color: var(--light-crimson-red);
@@ -169,6 +165,17 @@ body {
 .img-card {
     width: 223px;
     height: 310px;
+}
+
+.page-count{
+    color: white;
+    font-size: 50px;
+    margin: 0 12px;
+}
+
+.arrows-change button{
+    border: none;
+    background-color: transparent;
 }
 
 @media (max-width: 1440px) {

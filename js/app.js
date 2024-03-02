@@ -1,18 +1,13 @@
 const baseURL = 'https://api.magicthegathering.io/v1'
 const prevPage = document.getElementById('previous-page')
 const nextPage = document.getElementById('next-page')
+const pageNumber = document.getElementById('page-count')
+
 let start = 0
 let end = 10
+let page = 2
 
-prevPage.addEventListener('click', () =>{
-    start-=10
-    end-=10
-})
-
-nextPage.addEventListener('click', () =>{
-    start = start + 10
-    end+=10
-})
+pageNumber.innerHTML = page
 
 console.log(start)
 
@@ -61,7 +56,6 @@ function showCards(cards){
                 </div>
             </div>
         </div>
-        <p>${cards.multiverseid}</p>
         `
         divCards.classList.add('card-box')
         cardContainer.appendChild(divCards)
