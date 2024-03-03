@@ -7,15 +7,22 @@ let page = 1
 let start = 0
 let end = 10
 
-nextPage.addEventListener('click', ()=>{
-    return page++
-})
-
-pageNumber.addEventListener('click', ()=>{
-    alert(page)
-})
-
 pageNumber.innerHTML = page
+
+nextPage.addEventListener('click', ()=>{
+    page++
+    pageNumber.innerHTML = page
+})
+
+prevPage.addEventListener('click', ()=>{
+    if(page == 1){
+        
+    }else{
+        page--
+        pageNumber.innerHTML = page
+    }
+})
+
 
 const loadCards = async () =>{
     const res = await fetch(`${baseURL}/cards`)
