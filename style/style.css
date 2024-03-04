@@ -10,11 +10,11 @@
     box-sizing: border-box;
 }
 
-.header{
+.header {
     display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30vw;
+    align-items: center;
+    justify-content: center;
+    gap: 30vw;
 }
 
 body {
@@ -75,7 +75,7 @@ body {
 }
 
 .main .arrows-change img {
-    cursor: url('../img/mouse-point.png'),pointer;
+    cursor: url('../img/mouse-point.png'), pointer;
 }
 
 .container {
@@ -97,7 +97,7 @@ body {
     gap: 10px;
 }
 
-.social-media{
+.social-media {
     position: absolute;
     align-self: flex-end;
     margin-right: 125px;
@@ -105,8 +105,8 @@ body {
     gap: 25px;
 }
 
-.social-media img{
-    cursor: url('../img/mouse-point.png'),pointer;
+.social-media img {
+    cursor: url('../img/mouse-point.png'), pointer;
 }
 
 .footer h2 {
@@ -171,7 +171,7 @@ body {
     transform: rotateY(180deg);
 }
 
-.flip-card img{
+.flip-card img {
     border-radius: 15px;
 }
 
@@ -180,13 +180,13 @@ body {
     height: 310px;
 }
 
-.page-count{
+.page-count {
     color: white;
     font-size: 50px;
     margin: 0 12px;
 }
 
-.arrows-change button{
+.arrows-change button {
     border: none;
     background-color: transparent;
 }

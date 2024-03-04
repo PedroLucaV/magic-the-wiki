@@ -1,0 +1,75 @@
+:root {
+    --crimson-red: #201111;
+    --light-crimson-red: #391C1C;
+}
+
+* {
+    cursor: url('../img/mouse-normal.png'), auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header img:hover{
+    cursor: url('../img/mouse-point.png'), auto;
+}
+
+.card-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'langar';
+    color: white;
+}
+
+.name-card h3{
+    font-size: 32pt;
+    margin: 20px;
+}
+
+.cards-detail{
+    font-size: 18pt;
+    text-align: center;
+}
+
+.card-image img{
+    margin-top: 2rem;
+    border-radius: 15px;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-container{
+    margin-top: 1rem;
+    border-radius: 15px;
+    width: 500px;
+    background-color: rgb(28, 92, 92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.cards-detail a{
+    color: white;
+}
+
+.cards-detail a:hover{
+    cursor: url('../img/mouse-point.png'), pointer;
+}
+
+body {
+    background-color: var(--crimson-red);
+}
