@@ -43,6 +43,7 @@
 .card-image img{
     margin-top: 2rem;
     border-radius: 15px;
+    width: 250px;
 }
 
 .main{

@@ -3,9 +3,13 @@ const prevPage = document.getElementById('previous-page')
 const nextPage = document.getElementById('next-page')
 const pageNumber = document.getElementById('page-count')
 
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
 let page = 1
-let start = 0
-let end = 10
+let start = getRandomInt(100)
+let end = start+10
 
 pageNumber.innerHTML = page
 

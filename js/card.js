@@ -23,10 +23,21 @@ async function fetchAndDisplayCard() {
     }
 }
 
+function checkImg(cardUrl){
+    if(cardUrl === undefined){
+        return '../img/empty-card.jpg'
+    }else{
+        return cardUrl
+    }
+}
+
 function showCardDetails(cardData) {
     const cardContainer = document.getElementById('cards-container');
     const divCards = document.createElement('div');
     divCards.classList.add('card-box');
+    if(cardData.card.imageUrl === undefined){
+        alert("THE FOLOWING CARD DOES'NT HAVE IMAGE IN THEIR DATABASE!")
+    }
 
     const cardDetails = `
     <div class="card-details">
@@ -42,7 +53,7 @@ function showCardDetails(cardData) {
             </a>
         </div>
         <div class='card-image'>
-            <img src="${cardData.card.imageUrl}" alt="Magic the Wiki logo">
+            <img src="${checkImg(cardData.card.imageUrl)}" alt="image of ${cardData.card.name}">
         </div>
     </div>`;
     divCards.innerHTML = cardDetails;
