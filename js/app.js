@@ -60,11 +60,11 @@ function showCards(cards){
         divCards.innerHTML = `
         <div class="flip-card">
             <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div class="flip-card-front img-cards">
                     <img src="./img/magic-card-cover.png" alt="Avatar" style="width:223px;height:310px;">
                 </div>
                 <div class="flip-card-back">
-                <img src="${checkImg(cards.imageUrl)}" alt="Carta ${cards.name}" class="img-card">
+                <img src="${checkImg(cards.imageUrl)}" alt="Carta ${cards.name}" class="img-card img-cards">
                 </div>
             </div>
         </div>

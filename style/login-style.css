@@ -40,6 +40,7 @@ main{
 .container{
     border-radius: 20px;
     background-color: var(--white);
+    margin-bottom: 150px;
 }
 
 .form-box{
@@ -93,7 +94,6 @@ main{
 }
 
 .footer {
-    margin-top: 6%;
     cursor: url('../img/mouse-normal.png'), auto;
     display: flex;
     height: 150px;
